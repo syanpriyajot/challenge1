@@ -1,0 +1,31 @@
+.currency__card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  box-shadow: 0 0 2rem rgba(0, 185, 255, .5);
+  justify-items: center;
+  padding: 2rem;
+  margin: 2rem;
+  width: 19rem;
+  height: 30rem;
+  cursor: pointer;
+  color: #00b9ff;
+  border: 1px solid #00b9ff;
+  border-radius: 1.75rem;
+  animation: fadein 1.25s ease-in-out 0ms 1;
+}
+
+.currency__card:hover {
+  color: #fff;
+  background-color: #00b9ff;
+  border-color: #00b9ff;
+}
+
+.currency-icon__container {
+  width: 10rem;
+  margin-bottom: .7rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-size: cover;
+}

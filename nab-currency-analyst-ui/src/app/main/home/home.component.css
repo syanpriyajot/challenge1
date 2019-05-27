@@ -1,0 +1,17 @@
+/*.main__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+}*/
+
+.main__container {
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+min-height: 90vh;
+position: relative;
+}

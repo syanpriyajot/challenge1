@@ -1,0 +1,50 @@
+<div class="currency-details-page__wrapper">
+  <div class="currency-details__container profit-details">
+
+    <!-- Profit Content -->
+    <div class="header-content__container">
+      <!-- Logo Container -->
+      <div class="crypto-logo__container">
+        <img [src]="this.cryptoLogo">
+      </div>
+
+      <!-- Buy Sell Container -->
+      <div class="crypto-profit__container">
+        <div class="buy-sell__container">
+          <div class="buy__container">
+            <span class="crypto__buy">BUY</span>
+            <span class="crypto-buy-price__value">${{this.currencyDetailsArray.buyQuote.price}}</span>
+            <span class="crypto-buy-time__value">{{this.bestBuyTime}}</span>
+          </div>
+          <div class="sell__container">
+            <span class="crypto__sell">SELL</span>
+            <span class="crypto-sell-price__value">${{this.currencyDetailsArray.sellQuote.price}}</span>
+            <span class="crypto-sell-time__value" >{{this.bestSellTime}}</span>
+          </div>
+        </div>
+        <div class="profit__container">
+          <span class="crypto__profit">PROFIT</span>
+          <span class="crypto-profit__value">${{this.getBestProfit()}}</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Quote Container -->
+    <div class="table-content__container">
+      <div class="crypto-quote__container price-details">
+        <div class="quote-column__heading" scope="col">
+          <span class="quote-column__number">#</span>
+          <span class="quote-column__time">TIME</span>
+          <span class="quote-column__price">PRICE</span>
+        </div>
+        <div class="quote-column__value" *ngFor="let quote of this.currencyDetailsArray.quotes let index=index">
+            <span class="quote-column-number__value">{{index+1}}</span>
+            <span class="quote-column-time__value">{{getFormattedTime(quote.time)}}</span>
+            <span class="quote-column-price__value">${{quote.price}}</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

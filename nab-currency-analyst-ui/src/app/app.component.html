@@ -1,0 +1,18 @@
+<!-- Root Container -->
+<main class="root__container">
+
+  <!-- Header -->
+  <header class="currency-analyst__header">
+    <div class="currency-analyst__logo">
+      <a [routerLink]="['/']" title="Home">
+        <img src="../assets/img/crypto-analyst-logo.png" alt="Crypto Analyst App"/>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="main-container__bg">
+    <router-outlet></router-outlet>
+  </div>
+
+</main>

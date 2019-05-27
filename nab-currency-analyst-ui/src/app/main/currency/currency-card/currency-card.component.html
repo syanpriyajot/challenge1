@@ -1,0 +1,15 @@
+<section class="currency__card" (click)="getCardDetails()">
+  <div class="currency-icon__container" [ngStyle]= "{'background': 'url(' + currencyIconImage + ')' + ' no-repeat'}">
+  </div>
+  <div class="currency-text__container">
+    <span class="currency__text" *ngIf="this.cardCurrencyType === 'BTC'" >
+      {{currencyAnalystConfig.CURRENCY.BTC.DESCRIPTION}}
+    </span>
+    <span class="currency__text" *ngIf="this.cardCurrencyType === 'ETH'" >
+      {{currencyAnalystConfig.CURRENCY.ETH.DESCRIPTION}}
+    </span>
+    <span class="currency__text" *ngIf="this.cardCurrencyType === 'LTC'" >
+      {{currencyAnalystConfig.CURRENCY.LTC.DESCRIPTION}}
+    </span>
+  </div>
+</section>
