@@ -1,3 +1,10 @@
+# CURRENCY-ANALYST
+
+# Development
+Angular app is run using the command ng serve. It will navigate to http://localhost:4201 . Any changes to the frontend code base will automatically reload the app.
+
+API written in Spring-Boot is hosted at http://localhost:8080
+
 # Introduction
 This test contains challenges for both frontend and backend speciality.
 You may choose to focus on whichever areas best demonstrate your expertise and experience.
